@@ -1,0 +1,60 @@
+export const nl = {
+  dir: "ltr",
+  nav: { home: "Home", about: "Over ons", services: "Diensten", contact: "Contact", book: "Boeken" },
+  common: { menu: "Menu", language: "Taal" },
+  serviceActions: { readMore: "Lees meer", backToServices: "Terug naar diensten" },
+  hero: {
+    title: "Wij bouwen moderne websites",
+    subtitle: "Snel, helder en gemaakt om bezoekers om te zetten in klanten.",
+    cta: "Neem contact op",
+    bookingCta: "Afspraak boeken",
+  },
+  sections: {
+    servicesTitle: "Diensten",
+    testimonialsTitle: "Reviews",
+    faqTitle: "Veelgestelde vragen",
+    contactInfoTitle: "Bedrijfsgegevens",
+    socialTitle: "Volg ons",
+  },
+  about: {
+    title: "Over ons",
+    description: "Wij helpen lokale bedrijven met snelle, betrouwbare websites die echte leads opleveren.",
+    mission: "Onze missie is om een professionele online aanwezigheid eenvoudig, betaalbaar en effectief te maken.",
+  },
+  contact: {
+    title: "Neem contact op",
+    description: "Klaar om online te groeien? Stuur ons een bericht of neem direct contact op via WhatsApp.",
+    buttonText: "Contact via WhatsApp",
+  },
+  globalCta: { text: "Een snelle website nodig voor je bedrijf?", buttonLabel: "Boek een gesprek" },
+  booking: {
+    title: "Afspraak boeken",
+    description: "Stuur je aanvraag en wij bevestigen je tijdslot.",
+    buttonText: "Aanvraag versturen",
+    successMessage: "Je aanvraag is succesvol verstuurd.",
+    errorMessage: "Versturen mislukt. Probeer het opnieuw.",
+    appointmentType: "Type afspraak",
+    openSheet: "Open boekingenbestand",
+    fields: {
+      name: { label: "Volledige naam", placeholder: "Volledige naam" },
+      email: { label: "E-mail", placeholder: "E-mail" },
+      phone: { label: "Telefoon", placeholder: "Telefoon" },
+      date: { label: "Gewenste datum en tijd" },
+      notes: { label: "Opmerkingen", placeholder: "Opmerkingen" },
+      honeypot: { label: "Website", placeholder: "Laat dit leeg" },
+    },
+  },
+  services: [
+    { title: "Webdesign", desc: "Moderne responsive websites" },
+    { title: "SEO", desc: "Beter gevonden worden in Google" },
+    { title: "Performance", desc: "Snelle en geoptimaliseerde websites" },
+  ],
+  testimonials: [
+    { name: "A. Johnson", quote: "Goede ervaring en duidelijke zakelijke resultaten." },
+    { name: "L. Smith", quote: "Snelle oplevering en professionele communicatie." },
+  ],
+  faq: [
+    { question: "Hoe lang duurt een website?", answer: "De meeste projecten gaan live binnen 2-4 weken." },
+    { question: "Bieden jullie onderhoud aan?", answer: "Ja, maandelijkse onderhoudsplannen zijn beschikbaar." },
+  ],
+} as const;

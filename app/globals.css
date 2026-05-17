@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #111827;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card-background: #f9fafb;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, color-mix(in srgb, var(--foreground) 8%, transparent), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--background) 96%, var(--foreground) 4%), var(--background));
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 639px) {
+  body {
+    background: var(--background);
+  }
+}

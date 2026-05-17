@@ -1,0 +1,60 @@
+export const ar = {
+  dir: "rtl",
+  nav: { home: "الرئيسية", about: "من نحن", services: "الخدمات", contact: "التواصل", book: "الحجز" },
+  common: { menu: "القائمة", language: "اللغة" },
+  serviceActions: { readMore: "اقرأ المزيد", backToServices: "العودة للخدمات" },
+  hero: {
+    title: "نبني مواقع حديثة",
+    subtitle: "سريعة، مرتبة، ومصممة لتحويل الزوار إلى عملاء.",
+    cta: "تواصل معنا",
+    bookingCta: "احجز موعد",
+  },
+  sections: {
+    servicesTitle: "الخدمات",
+    testimonialsTitle: "آراء العملاء",
+    faqTitle: "الأسئلة الشائعة",
+    contactInfoTitle: "معلومات النشاط",
+    socialTitle: "تابعنا",
+  },
+  about: {
+    title: "من نحن",
+    description: "نساعد الأنشطة المحلية على إطلاق مواقع سريعة وموثوقة تجلب نتائج حقيقية.",
+    mission: "مهمتنا هي جعل الحضور الرقمي الاحترافي بسيطا وفعالا.",
+  },
+  contact: {
+    title: "تواصل معنا",
+    description: "جاهز لتطوير حضورك الرقمي؟ أرسل لنا رسالة أو تواصل مباشرة عبر واتساب.",
+    buttonText: "تواصل عبر واتساب",
+  },
+  globalCta: { text: "بدك موقع سريع لنشاطك؟", buttonLabel: "احجز مكالمة" },
+  booking: {
+    title: "حجز موعد",
+    description: "أرسل طلب الحجز وسنؤكد الموعد معك.",
+    buttonText: "إرسال طلب الحجز",
+    successMessage: "تم إرسال طلب الحجز بنجاح.",
+    errorMessage: "فشل إرسال طلب الحجز. حاول مرة أخرى.",
+    appointmentType: "نوع الموعد",
+    openSheet: "فتح ملف الحجوزات",
+    fields: {
+      name: { label: "الاسم الكامل", placeholder: "الاسم الكامل" },
+      email: { label: "البريد الإلكتروني", placeholder: "البريد الإلكتروني" },
+      phone: { label: "رقم الهاتف", placeholder: "رقم الهاتف" },
+      date: { label: "التاريخ والوقت المفضل" },
+      notes: { label: "ملاحظات", placeholder: "ملاحظات" },
+      honeypot: { label: "الموقع", placeholder: "اترك هذا الحقل فارغا" },
+    },
+  },
+  services: [
+    { title: "تصميم مواقع", desc: "مواقع عصرية ومتجاوبة" },
+    { title: "تحسين محركات البحث", desc: "رفع ترتيبك على جوجل" },
+    { title: "أداء عالي", desc: "سرعة تحميل وتجربة أفضل" },
+  ],
+  testimonials: [
+    { name: "أحمد", quote: "تجربة ممتازة ونتائج واضحة في العمل." },
+    { name: "ليلى", quote: "تنفيذ سريع وتعامل احترافي جدا." },
+  ],
+  faq: [
+    { question: "كم يستغرق بناء الموقع؟", answer: "غالبا يتم الإطلاق خلال 2 إلى 4 أسابيع." },
+    { question: "هل توفرون صيانة؟", answer: "نعم، نوفر خطط صيانة شهرية." },
+  ],
+} as const;
