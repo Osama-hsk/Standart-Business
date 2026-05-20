@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 // Zod schema for booking validation
 const bookingSchema = z.object({
   name: z.string().min(1, "Name is required").max(100, "Name too long"),
-  email: z.string().email("Invalid email").max(254, "Email too long"),
+  email: z.union([z.literal(""), z.string().email("Invalid email").max(254, "Email too long")]).optional().default(""),
   phone: z.string().min(1, "Phone is required").max(20, "Phone too long"),
-  date: z.string().min(1, "Date is required"),
+  date: z.string().optional().default(""),
   appointmentType: z.string().min(1, "Appointment type is required"),
   notes: z.string().max(1000, "Notes too long").optional().default(""),
   website: z.string().max(0).optional().default(""),
@@ -116,7 +116,7 @@ export async function POST(request: Request) {
     if (storage.provider === "email") {
       const subject = encodeURIComponent(`Booking request from ${cleanBookingData.name}`);
       const body = encodeURIComponent(
-        `Name: ${cleanBookingData.name}\nEmail: ${cleanBookingData.email}\nPhone: ${cleanBookingData.phone}\nPreferred date: ${cleanBookingData.date}\nNotes: ${cleanBookingData.notes}`
+        `Name: ${cleanBookingData.name}\nEmail: ${cleanBookingData.email || "Not provided"}\nPhone: ${cleanBookingData.phone}\nService needed: ${cleanBookingData.appointmentType}\nPreferred date: ${cleanBookingData.date || "Not provided"}\nMessage: ${cleanBookingData.notes || "Not provided"}`
       );
       return NextResponse.json({
         ok: true,

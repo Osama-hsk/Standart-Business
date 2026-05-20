@@ -17,6 +17,9 @@ export default function MapSection() {
       <div className={`${siteConfig.ui.containerWidth} mx-auto`}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">{siteConfig.map.title}</h2>
         <p style={{ color: "var(--color-muted)" }}>{branch.address}</p>
+        <p className="mt-2 max-w-2xl text-sm leading-6 sm:text-base sm:leading-7" style={{ color: "var(--color-muted)" }}>
+          We provide [Service Name] across [City], including nearby areas such as [Area 1], [Area 2], and [Area 3]. Use this section to show local coverage clearly so visitors know when to contact the business.
+        </p>
         <div
           className={`mt-4 overflow-hidden ${siteConfig.ui.radius}`}
           style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card-background)" }}

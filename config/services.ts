@@ -13,7 +13,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "Service Consultation",
-          short: "A clear first conversation about the job, the problem, and the next step",
+          short: "Understand the job, discuss the issue, and get a clear recommendation for the next step.",
           longTitle: "Service Consultation and Request Review",
           paragraphs: [
             "Start with a simple consultation that helps the client explain the need clearly and understand the next step.",
@@ -30,7 +30,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "On-Site Service",
-          short: "A direct local service visit for the required work",
+          short: "Get the hands-on service visit needed to inspect, repair, install, or complete the work properly.",
           longTitle: "On-Site Local Service Delivery",
           paragraphs: [
             "Use this section to explain the main local service itself in clear, practical language.",
@@ -47,7 +47,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "Follow-Up Support",
-          short: "Clear post-service communication and next-step guidance",
+          short: "Receive clear follow-up communication so you know what happens next after the first visit or request.",
           longTitle: "Follow-Up Support and Customer Communication",
           paragraphs: [
             "A complete service website should also explain what happens after the first contact or visit.",
@@ -64,7 +64,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "Scheduled Appointments",
-          short: "Simple appointment requests with preferred date and time",
+          short: "Request a preferred date and time for the service and get a clear confirmation of the next step.",
           longTitle: "Scheduled Service Appointments",
           paragraphs: [
             "This package supports a simple request or booking flow without becoming a full calendar system.",
@@ -81,7 +81,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "Service Area Coverage",
-          short: "Clear coverage information for local clients",
+          short: "Check whether your address is covered and understand where the business provides local service.",
           longTitle: "Service Area Coverage and Local Reach",
           paragraphs: [
             "Local service businesses often lose clarity when coverage areas are not explained properly.",
@@ -98,7 +98,7 @@ export const servicesConfig = {
       copy: {
         en: {
           title: "Maintenance Support",
-          short: "Planned follow-up support and recurring visits when needed",
+          short: "Arrange recurring visits or planned support to keep the service reliable over time.",
           longTitle: "Maintenance Support and Ongoing Service Care",
           paragraphs: [
             "This service explains how the business supports repeat work, planned visits, or recurring local service needs.",

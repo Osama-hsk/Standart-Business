@@ -68,7 +68,7 @@ export default function Navbar() {
           <div className="flex shrink-0 items-center gap-2">
             <button
               type="button"
-              className="hidden rounded-full border px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] shadow-sm transition-transform hover:-translate-y-0.5 md:inline-flex"
+              className="inline-flex rounded-full border px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] shadow-sm transition-transform hover:-translate-y-0.5"
               style={{ borderColor: theme.border, backgroundColor: theme.cardBackground, color: theme.foreground }}
               aria-label={mode === "dark" ? "Switch to light mode" : "Switch to dark mode"}
               title={mode === "dark" ? "Light mode" : "Dark mode"}

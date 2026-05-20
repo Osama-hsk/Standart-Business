@@ -19,28 +19,28 @@ export const contentConfig = {
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact" },
-    { label: "Book", href: "/book" }
+    { label: "Request a Quote", href: "/book" }
   ],
   // Hero section copy and CTA buttons.
   // Primary top-of-page message.
   // `ctaHref` and `bookingCtaHref` can point to any internal route.
   hero: {
-    title: "A clear service website built to generate requests",
-    subtitle: "Give customers one clear place to understand your services, trust your business, and contact you easily.",
-    cta: "View Services",
+    title: "[Service Name] in [City / Area]",
+    subtitle: "Clear, reliable service for local customers — request a quote or contact us today.",
+    cta: "Call Now",
     ctaHref: "/services",
-    bookingCta: "Request Booking",
+    bookingCta: "Request a Quote",
     bookingCtaHref: "/book"
   },
   // Core business positioning data to adapt the site quickly for any business type.
   // This powers trust/conversion context in hero and CTA areas.
   // Update this first when switching to a new business client.
   businessProfile: {
-    industry: "Home Service Company",
-    city: "Service Area",
-    targetAudience: "Local customers who need to understand the service quickly and contact the business with confidence",
-    uniqueValueProposition: "Turn interest into calls, messages, or bookings.",
-    leadGoal: "This website is built for one purpose: helping customers understand the business and take action."
+    industry: "[Service Name]",
+    city: "[City / Area]",
+    targetAudience: "Local customers who need a clear explanation of the service and an easy way to get in touch",
+    uniqueValueProposition: "Practical local service with clear communication and a simple next step.",
+    leadGoal: "Help visitors understand the service quickly and choose the easiest way to contact the business."
   },
   // High-conversion offer strip content shown near the top of the homepage.
   // Best practice:
@@ -58,12 +58,12 @@ export const contentConfig = {
   // Add objective proof points only (ratings, response time, number of clients, certifications).
   trustBar: {
     enabled: true,
-    title: "Customers should not have to guess what you offer",
+    title: "Why local customers choose [Business Name]",
     items: [
-      "A clear service page built to make action easy",
-      "Show your services, explain what you do, build trust, and guide customers toward calling, messaging, or booking.",
-      "Make customers feel confident before they contact you",
-      "Clear information, professional presentation, and an easy contact flow can make your business feel more trustworthy."
+      "5+ Years Experience",
+      "Fast Response",
+      "Local Service",
+      "Work Guarantee"
     ]
   },
   // Optional global CTA block shown across key pages.
@@ -78,7 +78,7 @@ export const contentConfig = {
   // Shared heading labels for reusable sections.
   // Global labels used in multiple components.
   sections: {
-    servicesTitle: "Core Services",
+    servicesTitle: "Services in [City / Area]",
     testimonialsTitle: "Testimonials",
     faqTitle: "Frequently Asked Questions",
     contactInfoTitle: "Business Details",
@@ -87,36 +87,37 @@ export const contentConfig = {
   // About page text content.
   // Keep this concise and credible; avoid generic claims.
   about: {
-    title: "Customers should not have to guess what you offer",
-    description: "If people cannot quickly understand your services, service area, and next step, they may leave and contact someone else.",
-    mission: "This website is built for one purpose: helping customers understand the business and take action."
+    title: "Clear help for local customers",
+    description: "We help local customers solve [service problem] without confusion or delays. Our process is simple: understand the job, explain the next step, and complete the work with clear communication.",
+    mission: "We handle the details so you know what is happening from start to finish."
   },
   // Contact section/page content and communication details.
   // These values are shown directly to users.
   // Update this immediately for every new client project.
   // The floating WhatsApp button also uses whatsapp + buttonText when enabled in site.ts.
   contact: {
-    title: "Get in Touch",
-    description: "Call directly, message on WhatsApp, or send a service request through the booking form. This complete version keeps the path from service discovery to contact clear and practical.",
-    whatsapp: "https://wa.me/32400000000",
-    buttonText: "Contact on WhatsApp",
-    email: "Business contact details",
-    phone: "Business contact details",
-    address: "Service area",
-    hours: "Availability shared after request"
+    title: "Contact [Business Name]",
+    description: "Call, send a WhatsApp message, or request a quote. We make it easy for local customers to ask questions, explain the job, and get the next step clearly.",
+    whatsapp: "https://wa.me/[WhatsApp Number]",
+    buttonText: "WhatsApp Us",
+    email: "[Email Address]",
+    phone: "[Phone Number]",
+    address: "[City / Area]",
+    hours: "Mon - Sat: 8:00 AM - 8:00 PM"
   },
   // Social profile links.
   // Add only real, active profiles.
   social: [
-    { label: "Call", href: "tel:+32400000000" },
-    { label: "WhatsApp", href: "https://wa.me/32400000000" },
-    { label: "Email", href: "mailto:hello@northline-demo.com" }
+    { label: "Call Now", href: "tel:[Phone Number]" },
+    { label: "WhatsApp Us", href: "https://wa.me/[WhatsApp Number]" },
+    { label: "Email Us", href: "mailto:[Email Address]" }
   ],
   // Footer text and legal/utility links.
   // Usually includes legal links and copyrights.
   footer: {
-    copyright: "© 2026 osamahussein. All rights reserved.",
+    copyright: "© 2026 [Business Name]. All rights reserved.",
     links: [
+      { label: "Home", href: "/" },
       { label: "About", href: "/about" },
       { label: "Services", href: "/services" },
       { label: "Contact", href: "/contact" }
@@ -125,15 +126,16 @@ export const contentConfig = {
   // Testimonials section items.
   // Keep quotes short and believable.
   testimonials: [
-    { name: "A. Johnson", quote: "Great experience and real business results." },
-    { name: "L. Smith", quote: "Fast delivery and very professional communication." }
+    { name: "Customer Name — [City / Area]", quote: "They responded quickly, explained the work clearly, and completed everything in a professional way." },
+    { name: "Customer Name — [City / Area]", quote: "Easy to contact, clear about timing, and very helpful from the first message to the final visit." },
+    { name: "Customer Name — [City / Area]", quote: "The process was straightforward, the communication was clear, and the service felt dependable throughout." }
   ],
   // FAQ section entries.
   // Focus on objection handling (price, time, support, guarantees).
   faq: [
-    { question: "What happens after I send a request?", answer: "The team reviews the request, confirms the right next step, and follows up with availability or service details." },
-    { question: "Do you cover different service areas?", answer: "Yes. This complete version includes a clear service-area section for local coverage." },
-    { question: "Can I request a specific date or time?", answer: "Yes. The request form supports a preferred date and time so the business can review availability and reply directly." },
-    { question: "Does this package include separate service pages?", answer: "Yes. This version supports up to five service pages so the client can understand the offer more clearly before making contact." }
+    { question: "How do I request a quote?", answer: "Send your details, choose the service you need, and explain the job. The business can review the request and reply with the next step." },
+    { question: "Which service areas do you cover?", answer: "Use this section to list the city and nearby areas the business serves so visitors can quickly confirm coverage." },
+    { question: "Can I contact the business by phone or WhatsApp?", answer: "Yes. Visitors can call directly or send a WhatsApp message if they want a faster response." },
+    { question: "What should I include in my message?", answer: "It helps to mention the service needed, the location, and any useful job details so the business can respond clearly." }
   ]
 } as const;

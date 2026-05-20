@@ -59,7 +59,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
         className="inline-block w-full rounded-full border px-4 py-2 text-center text-sm font-medium sm:w-auto"
         style={{ borderColor: theme.border, color: theme.foreground }}
       >
-        {hasServicePages ? t.serviceActions.readMore : "Included Service"}
+        {hasServicePages ? t.serviceActions.readMore : "Request This Service"}
       </span>
     </>
   );

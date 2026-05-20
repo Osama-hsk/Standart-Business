@@ -105,19 +105,6 @@ export default function BookingForm() {
             </div>
 
             <div>
-              <label className="mb-1 block text-sm">{t.booking.fields.email.label}</label>
-              <input
-                type="email"
-                className="w-full rounded-xl border px-4 py-3"
-                style={{ borderColor: theme.border, backgroundColor: theme.background, color: theme.foreground }}
-                placeholder={t.booking.fields.email.placeholder}
-                value={form.email}
-                onChange={(e) => setForm((prev) => ({ ...prev, email: e.target.value }))}
-                required={booking.fields.email.required}
-              />
-            </div>
-
-            <div>
               <label className="mb-1 block text-sm">{t.booking.fields.phone.label}</label>
               <input
                 className="w-full rounded-xl border px-4 py-3"
@@ -128,22 +115,10 @@ export default function BookingForm() {
                 required={booking.fields.phone.required}
               />
             </div>
-
-            <div>
-              <label className="mb-1 block text-sm">{t.booking.fields.date.label}</label>
-              <input
-                type="datetime-local"
-                className="w-full rounded-xl border px-4 py-3"
-                style={{ borderColor: theme.border, backgroundColor: theme.background, color: theme.foreground }}
-                value={form.date}
-                onChange={(e) => setForm((prev) => ({ ...prev, date: e.target.value }))}
-                required={booking.fields.date.required}
-              />
-            </div>
           </div>
 
           <div>
-            <label className="mb-1 block text-sm">{t.booking.appointmentType}</label>
+            <label className="mb-1 block text-sm">Service Needed</label>
             <select
               className="w-full rounded-xl border px-4 py-3"
               style={{ borderColor: theme.border, backgroundColor: theme.background, color: theme.foreground }}
@@ -170,6 +145,17 @@ export default function BookingForm() {
               required={booking.fields.notes.required}
             />
           </div>
+
+          <input
+            type="hidden"
+            value={form.email}
+            readOnly
+          />
+          <input
+            type="hidden"
+            value={form.date}
+            readOnly
+          />
 
           <button
             type="submit"

@@ -9,6 +9,8 @@ export default function Contact() {
   const { theme } = useThemeMode();
   const { contact, images, social } = siteConfig.content;
   const { t } = useLanguage();
+  const phoneHref = `tel:${contact.phone.replace(/\s+/g, "")}`;
+  const emailHref = `mailto:${contact.email}`;
 
   return (
     <section id="contact" className="px-4 py-12 sm:px-6 sm:py-20">
@@ -26,6 +28,7 @@ export default function Contact() {
             {t.contact.description}
           </p>
 
+          {/* IMPROVED: stronger local service copy */}
           <a
             href={contact.whatsapp}
             target="_blank"
@@ -44,8 +47,8 @@ export default function Contact() {
           }}>
             <h3 className="font-bold mb-4">{t.sections.contactInfoTitle}</h3>
             <div className="space-y-3 break-words">
-              <p><strong>Email:</strong> {contact.email}</p>
-              <p><strong>Phone:</strong> {contact.phone}</p>
+              <p><strong>Email:</strong> <a href={emailHref} className="underline">{contact.email}</a></p>
+              <p><strong>Call:</strong> <a href={phoneHref} className="underline">{contact.phone}</a></p>
               <p><strong>Address:</strong> {contact.address}</p>
               <p><strong>Hours:</strong> {contact.hours}</p>
             </div>

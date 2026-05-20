@@ -33,7 +33,7 @@ import { themeConfig } from "./theme";
 
 export const siteConfig = {
   // Public business name shown in schema and reusable brand references.
-  brand: "Northline Home Services",
+  brand: "[Business Name]",
 
   // Default language and supported language dropdown options.
   locale: { lang: localesConfig.active },
@@ -67,7 +67,7 @@ export const siteConfig = {
   // Turn whole pages on/off. Hidden pages return 404 instead of broken UI.
   pageVisibility: {
     home: true,
-    about: false,
+    about: true,
     services: true,
     contact: true,
     book: true,
@@ -79,6 +79,7 @@ export const siteConfig = {
     offer: false,
     trust: true,
     services: true,
+    about: true,
     testimonials: false,
     faq: true,
     contact: true,
@@ -87,7 +88,7 @@ export const siteConfig = {
 
   // Reorder homepage sections by moving these keys.
   // Keys must exist in homeSections and in app/page.tsx sectionsMap.
-  homeSectionsOrder: ["hero", "trust", "services", "faq", "contact", "map"],
+  homeSectionsOrder: ["hero", "trust", "services", "about", "faq", "contact", "map"],
 
   // Main editable systems imported from focused config files.
   booking: bookingConfig,
@@ -99,7 +100,7 @@ export const siteConfig = {
   // Set enabled to false for service-area businesses without a public address.
   map: {
     enabled: true,
-    title: "Service area",
+    title: "Service area in [City]",
     iframeSrc: "https://www.google.com/maps?q=Main%20Street%2012%20Amsterdam&output=embed",
   },
 
@@ -111,10 +112,10 @@ export const siteConfig = {
     locations: [
       {
         id: "main",
-        name: "Northline Main Service Area",
-        address: "Service area",
-        phone: "Business contact details",
-        hours: "Availability shared after request",
+        name: "[Business Name] Main Service Area",
+        address: "[City / Area]",
+        phone: "[Phone Number]",
+        hours: "Mon - Sat: 8:00 AM - 8:00 PM",
         mapEmbedUrl: "https://maps.google.com",
       },
     ],

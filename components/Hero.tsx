@@ -36,6 +36,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
+            {/* IMPROVED: clearer CTA */}
             <Link
               href={hero.bookingCtaHref ?? "/book"}
               className="inline-flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium sm:px-6 sm:text-base"
@@ -43,13 +44,13 @@ export default function Hero() {
             >
               {t.hero.bookingCta}
             </Link>
-            <Link
-              href={hero.ctaHref ?? "/contact"}
+            <a
+              href={phoneHref}
               className="inline-flex items-center justify-center rounded-xl border px-4 py-3 text-sm font-medium sm:px-6 sm:text-base"
               style={{ borderColor: theme.border, color: theme.foreground, backgroundColor: theme.cardBackground }}
             >
               {t.hero.cta}
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -62,7 +63,7 @@ export default function Hero() {
           </p>
           <h2 className="mt-4 text-2xl font-bold sm:text-3xl">Choose the fastest next step</h2>
           <p className="mt-3 text-sm leading-6 sm:text-base sm:leading-7" style={{ color: theme.muted }}>
-            Book an appointment online or call directly if you want a faster response from the team.
+            Request a quote online, call now, or contact the team directly for a clear next step.
           </p>
 
           <div className="mt-6 flex flex-col gap-3">
@@ -78,14 +79,14 @@ export default function Hero() {
               className="inline-flex w-full items-center justify-center rounded-xl border px-4 py-3 text-sm font-medium sm:w-auto sm:px-6 sm:text-base"
               style={{ borderColor: theme.border, color: theme.foreground }}
             >
-              Call Directly
+              Call Now
             </a>
             <Link
-              href={hero.ctaHref ?? "/contact"}
+              href="/contact"
               className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-medium sm:w-auto sm:px-6 sm:text-base"
               style={{ backgroundColor: theme.background, color: theme.foreground }}
             >
-              {t.hero.cta}
+              Contact Us Today
             </Link>
           </div>
         </div>

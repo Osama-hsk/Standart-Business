@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import OfferStrip from "@/components/OfferStrip";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
+import AboutContent from "@/components/AboutContent";
 import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
@@ -19,6 +20,7 @@ const sectionsMap = {
   offer: <OfferStrip />,
   trust: <TrustBar />,
   services: <Services limit={siteConfig.servicesConfig.showOnHomeCount} />,
+  about: <AboutContent />,
   testimonials: <Testimonials />,
   faq: <Faq />,
   contact: <Contact />,

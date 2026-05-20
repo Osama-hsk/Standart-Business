@@ -10,17 +10,17 @@ const siteUrl = envSiteUrl.replace(/\/+$/, "");
 
 export const seoConfig = {
   siteUrl,
-  siteName: "Northline Home Services",
-  defaultTitle: "Northline Home Services | Complete Local Service Website",
+  siteName: "[Business Name]",
+  defaultTitle: "[Business Name] | [Service Name] in [City / Area]",
   defaultDescription: "A complete local service website with up to five service pages, clear contact actions, service-area information, and a practical booking request flow.",
   ogImage: "/next.svg",
   twitterCard: "summary_large_image",
   pages: {
-    home: { title: "Home | Northline Home Services", description: "Complete local service website with clear service pages, trust signals, and direct request actions." },
-    about: { title: "About | Northline Home Services", description: "Business background and service approach." },
-    services: { title: "Services | Northline Home Services", description: "Explore five structured service pages with clear explanations." },
-    contact: { title: "Contact | Northline Home Services", description: "Contact details, service area, and direct communication options." },
-    book: { title: "Book | Northline Home Services", description: "Send a service request through the built-in booking flow." }
+    home: { title: "[Business Name] | [Service Name] in [City / Area]", description: "Complete local service website with clear service pages, trust signals, and direct request actions." },
+    about: { title: "About | [Business Name]", description: "Business background and service approach." },
+    services: { title: "Services | [Business Name]", description: "Explore structured service pages with clear explanations." },
+    contact: { title: "Contact | [Business Name]", description: "Contact details, service area, and direct communication options." },
+    book: { title: "Request a Quote | [Business Name]", description: "Send a service request through the built-in booking flow." }
   }
 } as const;
 
